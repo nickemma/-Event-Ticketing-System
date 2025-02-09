@@ -1,5 +1,3 @@
-<a name="readme-top"></a>
-
 <!-- PROJECT LOGO -->
 <br />
 div align="center">
@@ -12,21 +10,16 @@ div align="center">
     |
     <a href="https://github.com/nickemma/event-ticketing-system/issues/new" target="_blank">Request Feature</a>
   </h5>
-</div>
 
 <!-- ABOUT THE PROJECT -->
 
 ### Event Ticketing System
 
-A scalable backend service for managing events, tickets, and transactions. Built with Golang, PostgreSQL, and Kubernetes. Features include JWT authentication, atomic ticket inventory management, payment processing, and audit logging.
+A scalable backend service for managing events, tickets, and transactions. Built with Golang, PostgreSQL, and Kubernetes  on the backend, and a modern Next.js frontend for a seamless user experience. Features include JWT authentication, atomic ticket inventory management, payment processing, and audit logging.
 
 <div align="center">
   <img  width="1000" alt="screenshot" src="./images/event-ticketing-system.png">
 </div>
-
-#### Built With
-
-**Backend & DevOps:**
 
 #### Built With
 
@@ -42,6 +35,17 @@ A scalable backend service for managing events, tickets, and transactions. Built
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
+**Frontend & UI/UX:**
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Zustand](https://img.shields.io/badge/Zustand-2d2d2d?style=for-the-badge&logo=react&logoColor=white)](https://zustand-demo.pmnd.rs/)
+[![React Query](https://img.shields.io/badge/React%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white)](https://tanstack.com/query/latest)
+[![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)  
+[![shadcn/ui](https://img.shields.io/badge/ShadCN_UI-000000?style=for-the-badge&logo=shadcn&logoColor=white)](https://ui.shadcn.com/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
@@ -52,10 +56,15 @@ A scalable backend service for managing events, tickets, and transactions. Built
 
 #### Prerequisites
 
+**Backend**:
 - Go 1.21+
 - Docker & Docker Compose
 - PostgreSQL 15
 - Redis 7
+
+**Frontend**:
+- Node.js 20+
+- npm/yarn
 
 #### Installation
 
@@ -79,8 +88,26 @@ A scalable backend service for managing events, tickets, and transactions. Built
 5. **Start the server**
    ```sh
    make server
+   
+6. **Access the App**
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8080
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FRONTEND FEATURES -->
+### Frontend Features
+1. User Authentication
+ - Login/register with JWT token management.
+ - Protected routes for organizers.
+2. Event Dashboard
+- Create/edit events (organizers).
+- Browse events with filters (users).
+3. Ticket Purchase Flow
+- Real-time inventory updates during checkout.
+- Payment simulation with Stripe.js.
+4. Responsive Design
+- Mobile-first UI built with Tailwind CSS.
 
 <!-- CONTRIBUTING -->
 
@@ -99,6 +126,10 @@ Don't forget to give the project a star! Thanks again!
 
 Areas to Contribute:
 
+- Improve UI/UX with animations and better styling
+- Add dark mode support
+- Implement more advanced authentication features
+- Integrate real-time ticket availability tracking
 - Add payment gateway integrations (Stripe/PayPal)
 - Improve concurrent ticket purchase handling
 - Enhance Kubernetes deployment manifests
@@ -129,7 +160,6 @@ Distributed under the Apache2.0 License. See [Apache License 2.0](LICENSE) for d
  <a href="https://github.com/nickemma/"><img src="https://img.shields.io/badge/github-%23f78a38.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github"></a>
  <a href="mailto:nicholasemmanuel321@gmail.com"><img src="https://img.shields.io/badge/Gmail-f78a38?style=for-the-badge&logo=gmail&logoColor=white" alt="Linkedin"></a>
  </div>
- <div align="center"> <a href="https://www.linkedin.com/in/techieemma/"><img src="https://img.shields.io/badge/linkedin-%23f78a38.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin"></a> <a href="https://twitter.com/techieEmma"><img src="https://img.shields.io/badge/Twitter-%23f78a38.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter"></a> <a href="https://github.com/nickemma/"><img src="https://img.shields.io/badge/github-%23f78a38.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github"></a> <a href="mailto:nicholasemmanuel321@gmail.com"><img src="https://img.shields.io/badge/Gmail-f78a38?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a> </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
