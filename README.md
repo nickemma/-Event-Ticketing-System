@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
-div align="center">
+<div align="center">
   <h3 align="center">Event Ticketing System</h3>
   <h5 align="center">
     <br />
