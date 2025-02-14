@@ -13,5 +13,7 @@ migrateUp:
 migrateDown:
 	migrate -path db/migration -database="postgresql://root:securepassword@localhost:5432/event-ticketing?sslmode=disable" -verbose down
 
+sqlc:
+	sqlc generate
 
-.PHONY: postgres createDb dropDb migrateUp migrateDown
+.PHONY: postgres createDb dropDb migrateUp migrateDown sqlc
